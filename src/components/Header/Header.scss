@@ -1,0 +1,56 @@
+$silver: #E0E0E0;
+$poppins: "Poppins", sans-serif;
+$yellow: #FCC822;
+
+
+.header {
+  height: 100px;
+  display: flex;
+  margin: 0 20px;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $silver;
+
+  &__logo {
+    width: 200px;
+  }
+  @media (max-width: 720px){
+    &__logo {
+      width: 100px;
+    }
+  }
+
+  &__navigation {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: $silver;
+    font-family: $poppins;
+
+    &__item {
+      text-decoration: none;
+      color: $silver;
+      cursor: pointer;
+    }
+
+    &__item button {
+      font-family: $poppins;
+      margin-left: 20px;
+
+    }
+    @media(max-width: 720px){
+
+      &__item {
+        font-size: 12px;
+      }
+    }
+
+    &__item > button ~ a {
+
+      color: $yellow;
+    }
+  }
+}

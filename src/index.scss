@@ -1,0 +1,110 @@
+$poppins: "Poppins", sans-serif;
+$yellow: #FCC822;
+$gray: #D1D1D1;
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+
+}
+
+button {
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.yellow-button-filled, .yellow-button-outline {
+  font-weight: 500;
+  padding: 6px 20px;
+  font-family: $poppins;
+  border: 1px solid $yellow;
+  transition: 0.5s;
+
+}
+
+.yellow-button-filled a {
+  color: white;
+  font-family: $poppins;
+  outline: none;
+  background: none;
+
+}
+
+.gray-button-filled {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 6px 20px;
+  font-family: $poppins;
+  transition: 0.5s;
+  background: $gray;
+  box-shadow: 0px 10.4502px 23.2228px -6.96683px $gray;
+}
+
+.yellow-button-outline {
+  font-weight: 500;
+  color: $yellow;
+  padding: 6px 20px;
+  font-family: $poppins;
+  border: 1px solid $yellow;
+  transition: 0.5s;
+
+}
+
+
+.yellow-button-outline a {
+  transition: 0.5s;
+  color: $yellow;
+}
+.yellow-button-outline:hover a {
+  color: #fff;
+}
+
+.yellow-button-outline:hover {
+  background: $yellow;
+  color: white;
+}
+
+
+.yellow-button-filled{
+  box-shadow: 0px 10.4502px 23.2228px -6.96683px #FBE18F;
+  background: $yellow;
+  color: white;
+}
+
+.yellow-button-filled:hover,  {
+  background: white;
+  outline: none;
+  color: $yellow;
+}
+
+.yellow-button-filled a:hover, .yellow-button-filled:hover a {
+  background: none;
+  color: $yellow;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}

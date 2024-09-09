@@ -1,0 +1,60 @@
+$black: #333333;
+$poppins: "Poppins", sans-serif;
+$roboto: "Roboto", sans-serif;
+$silver: #828282;
+.main {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap:40px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+    &__headline {
+      width: 270px;
+      text-align: left;
+      color: $black;
+      font-size: 40px;
+      margin: 0;
+      font-family: $roboto, sans-serif;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
+    }
+
+
+    &__paragraph {
+      width: 100%;
+      animation: typing 4s steps(22), blink .5s infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      font-family: $roboto;
+      color: $silver;
+      padding-right: 3px;
+    }
+
+
+    &__buttons {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+}
